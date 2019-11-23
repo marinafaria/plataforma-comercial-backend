@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const methodOverride = require('method-override');
 
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 
 const app = express();
 const routes = require('./routes');

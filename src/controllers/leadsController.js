@@ -1,5 +1,5 @@
 const axios = require('axios');
-const Lead = require('../models/Lead');
+const Lead = require('../models/lead');
 
 module.exports = {
     async store(req, res) {
